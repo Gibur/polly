@@ -9,6 +9,8 @@
     height: 100px;
     background-color: green;
     margin-bottom: -100px;
+    position: fixed;
+
 }
 
 #content {
@@ -20,9 +22,12 @@
     height: 100%;
     width: 75px;
     margin-right: -75px;
+    margin-top: 100px;
     float: left;
     background-color: red;
-    position: relative;
+     position: fixed;
+     top: 8px;
+
 }
 
 #right-bar {
@@ -30,8 +35,12 @@
     width: 75px;
     float: right;
     margin-left: -75px;
+    margin-top: 100px;
     background-color: red;
-    position: relative;
+     position: fixed;
+      left: 100%;
+
+
 }
 
 #footer {
@@ -39,4 +48,7 @@
     height: 100px;
     margin-top: -100px;
     background-color: green;
+    position: fixed;
+    top:100%;
+
 }
