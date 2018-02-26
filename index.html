@@ -3,16 +3,38 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="js/script.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+  #draggable { width: 150px; height: 150px; padding: 0.5em; background-color: red;}
+  </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+  } );
+  </script>
 </head>
 <body>
-<div id="wrapper">
-    <div id="header">TOP</div>
-    <div id="content">
-        <div id="left-bar">LEFT</div>
-        <div id="screen"></div>
-        <div id="right-bar">RIGHT</div>
+    <div id="wrapper">
+        <div id="content">
+            <div id="header">
+                header
+            </div>
+            <div id="left-bar">
+                left
+            </div>
+            <div id="center">
+                <iframe id="window" src="src/pages/center-page.html" class="demo-frame"></iframe>
+            </div>
+            <div id="right-bar">
+                right
+            </div>
+        </div>
     </div>
-</div>
-<div id="footer">FOOTER</div>
+    <div id="footer">
+        Footer
+    </div>
 </body>
 </html>
